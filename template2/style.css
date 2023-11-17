@@ -14,6 +14,7 @@ html,body{
     /* background-color: red; */
     display: flex;
     justify-content: space-evenly;
+    padding: 0 3vw;
 }
 #left{
     height: 100%;
@@ -84,6 +85,22 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+#pricing{
+    /* background-color: red; */
+    height: 5vh;
+    width: 45%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pricing p{
+    font-weight: 500;
+}
+#pricing p i{
+    color: rgb(242, 242, 26);
 }
 #imageDiv{
     height: 60%;
@@ -95,8 +112,8 @@ html,body{
 }
 #circle{
     position: absolute;
-    left: 79%;
-    top: 23%;
+    left: 77%;
+    top: 25%;
     height: 8vw;
     width: 8vw;
     background-color: black;
