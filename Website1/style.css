@@ -152,3 +152,29 @@ hr{
     cursor: pointer;
     padding-right: 2vw;
 }
+#profileCarousel{
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    /* we have done the above 3 steps to give scroll bar */
+}
+#scrollContainer{
+    height: 100%;
+    width: auto;
+    /* background-color: aqua; */
+    display: inline-block;
+    /* we have done the above so that both the container divs can come in the same line */
+}
+#scrollContainer img{
+    /* display: none; */
+    padding: 20px;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top;
+}
