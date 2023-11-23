@@ -92,22 +92,63 @@ html,body{
     justify-content: space-between;
     /* background-color: beige; */
     padding-right: 1vw;
+    padding-bottom: 3vh;
     height: 15vh;
 }
 #overlay1 h1{
-    font-size: 3vw;
-    color: black;
+    font-size: 4vw;
     font-family: monument;
     line-height: 1;
+    color: transparent;
+    /* mix-blend-mode: difference; */
+    -webkit-text-stroke: 2px black; /* For WebKit-based browsers (Chrome, Safari) */
+}
+#overlay1 h1:hover{
+    font-size: 4vw;
+    font-family: monument;
+    line-height: 1;
+    color: black;
+    /* mix-blend-mode: difference; */
     -webkit-text-stroke: 2px white; /* For WebKit-based browsers (Chrome, Safari) */
 }
+#overlay1 h2{
+    /* background-color: aqua; */
+    padding: 2vw;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-weight: 100;
+}
+#overlay1 h2:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+hr{
+    border-color: black;
+}
 #overlay2{
+    padding-top: 3vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* background-color: aqua; */
     height: 6vh;
 }
-hr{
-    border-color: black;
+#overlay2 h2{
+    font-size: 4vh;
+    font-weight: 300;
+}
+#overlay2 h2 i{
+    font-weight: 100;
+    font-size: 2.5vw;
+    padding-right: 2vw;
+}
+#overlay2 h2 i:hover{
+    font-weight: 100;
+    font-size: 3vw;
+    padding-right: 3vw;
+    color: black;
+    cursor: pointer;
+    padding-right: 2vw;
 }
