@@ -159,7 +159,7 @@ hr{
     /* background-color: red; */
     white-space: nowrap;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: hidden;
     /* we have done the above 3 steps to give scroll bar */
 }
 #scrollContainer{
@@ -168,6 +168,10 @@ hr{
     /* background-color: aqua; */
     display: inline-block;
     /* we have done the above so that both the container divs can come in the same line */
+    animation-name: scrollAnimation;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 #scrollContainer img{
     /* display: none; */
@@ -177,4 +181,48 @@ hr{
     object-fit: cover;
     border-radius: 50%;
     object-position: top;
+}
+@keyframes scrollAnimation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+#alphabetsDiv{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabetsDiv h6{
+    /* background-color: aqua; */
+    font-size: 4vh;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin: 0 2vw;
+    border-bottom: 2px solid black;
+}
+#alphabetsDiv h5{
+    /* background-color: aqua; */
+    font-size: 2.5vh;
+    font-weight: 100;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all ease 0.2s;
+}
+#alphabetsDiv h5:hover{
+    border: 1px solid black;
 }
