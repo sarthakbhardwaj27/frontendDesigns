@@ -237,7 +237,7 @@ hr{
 #page2part2{
     height: 100%;
     width: 40%;
-    background-color: red;    
+    /* background-color: red;     */
 }
 #page2part1 img{
     height: 100%;
@@ -254,18 +254,76 @@ hr{
 #page2part2 #text{
     height: calc(100% - 75%);
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
 }
 #page2part2 #text #text1{
     height: 90%;
     width: 40%;
-    background-color: yellow;
-    
+    /* background-color: yellow; */
+    font-size: 3vh;
+    font-weight: 500;
+    padding: 0.6vw 0 0 0;
 }
 #page2part2 #text #text2{
     height: 90%;
     width: 55%;
-    background-color: pink;
+    /* background-color: pink; */
+    font-size: 1.8vh;
+    font-weight: 100;
+    padding: 0.6vw 0 0 0;
+}
+#page3{
+    height: 80%;
+    width: 100%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    padding: 0 5vw;
+}
+#page3-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    padding-top: 16vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+#page3-left img{
+    height: 60%;
+    width: 60%;
+    margin: 0 0 1vh 0;
+}
+#page3-left #text{
+    height: 30%;
+    width: 60%;
+    /* background-color: purple; */
+    font-size: 3vh;
+    padding: 3vh 0;
+    margin: 5vh 0 0 0;
+}
+#page3-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page4{
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 5vw;
+}
+#page4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
