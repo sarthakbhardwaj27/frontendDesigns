@@ -395,6 +395,7 @@ hr{
 }
 .profile:hover{
     background-color: #d4d4d4;
+    cursor: pointer;
 }
 .page5-profile-right{
     /* background-color: grey; */
@@ -408,4 +409,31 @@ hr{
 .page5-profile-right-subheading{
     font-size: 2vh;
     font-weight: 100;
+}
+#page6{
+    height: 100%;
+    width: 100%;
+    /* background-color: grey; */
+    padding: 10vh 5vw;
+    position: relative;
+}
+#page6>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#page6-7{
+    height: 15%;
+    width: 100%;
+    background-color: red;
+    display: inline-block;
+}
+#page6-7 h1{
+    background-color: blue;
+}
+#page7{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
 }
