@@ -190,6 +190,9 @@ hr{
         transform: translateX(-100%);
     }
 }
+/* #scrollContainer:hover{
+    animation-play-state: paused;
+} */
 #alphabetsDiv{
     height: 10vh;
     width: 100%;
