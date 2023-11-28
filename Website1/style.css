@@ -423,17 +423,74 @@ hr{
     object-fit: cover;
 
 }
-#page6-7{
-    height: 15%;
+.marquee{
+    height: 12vh;
     width: 100%;
-    background-color: red;
-    display: inline-block;
+    /* background-color: red; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0.5vw 0;
 }
-#page6-7 h1{
-    background-color: blue;
+.marquee h1{
+    display: inline-block;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    /* background-color: blue; */
+    padding: 0 3vw;
+    letter-spacing: 0.1vw;
+    animation-name: marquee;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: all ease 0.2s;
+}
+.marquee:hover h1{
+    color: black;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes marquee{
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(calc(-100% - 4px));
+    }
 }
 #page7{
+    height: 80%;
+    width: 100%;
+    /* background-color: black; */
+    padding: 5vw;
+    position: relative;
+}
+#page7 img{
     height: 100%;
     width: 100%;
-    background-color: beige;
+    object-fit: cover;
+    object-position: 0 20%;
+    filter: brightness(50%); 
+}
+#page7>hr{
+    position: absolute;
+    size: 10px;
+    width: 70vw;
+    border: solid white;
+    color: white;
+    bottom: 25vh;
+    left: 15vw;
+}
+#page7 #text{
+    color: white;
+    position: absolute;
+    bottom: 15vh;
+    left: 10vw;
+    font-size: 1vw;
+    font-family: monument;
+    text-transform: uppercase;
 }
