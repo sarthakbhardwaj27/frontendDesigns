@@ -6,12 +6,12 @@
 }
 
 html,body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 #main{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: #f8f8f8;
     position: relative;
     padding-top: 0.1px;
@@ -42,6 +42,9 @@ html,body{
     font-weight: 900;
     font-size: 5vh;
     letter-spacing: -2.5px;
+}
+#nav #menu{
+    display: none;
 }
 #nav h2{
     /* background-color: aqua; */
@@ -496,4 +499,146 @@ hr{
     font-size: 1vw;
     font-family: monument;
     text-transform: uppercase;
+}
+
+@media (max-width:435px) {
+    html,body{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: blue; */
+    }
+    #nav{
+        height: 8vh;
+        width: 100vw;
+        margin-top: 30px;
+        position: relative;
+    }
+    #nav h1{
+        /* background-color: blue; */
+        width: fit-content;
+        font-size: 3.5vh;
+    }
+    #nav h2{
+        /* background-color: aqua; */
+        display: none;
+    }
+    #nav #menu{
+        display: block;
+    }
+
+    #center{
+        height: 50%;
+    }
+    #overlay{
+        height: 15vh;
+        bottom: 8%;
+        /* background-color: red; */
+    }
+    #overlay1{
+        /* background-color: beige; */
+        padding-right: 1vw;
+        padding-bottom: 1vh;
+        height: 10vh;
+    }
+    #overlay1 h1{
+        font-size: 3vh;
+        line-height: 1;
+        letter-spacing: 2px;
+        color: black;
+        -webkit-text-stroke: 1px white; /* For WebKit-based browsers (Chrome, Safari) */
+    }
+    #overlay2{
+        padding-top: 1vh;
+        height: 3vh;
+    }
+    #overlay2 h2{
+        font-size: 3vh;
+    }
+    #overlay2 h2 i{
+        font-size: 2.5vh;
+    }
+    #profileCarousel{
+        height: 20vh;
+        /* background-color: red; */
+        /* we have done the above 3 steps to give scroll bar */
+        padding: 1vh;
+    }
+    #scrollContainer img{
+        /* display: none; */
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    #alphabetsDiv{
+        height: 8vh;
+        width: 100%;
+        /* background-color: red; */
+        gap: 0;
+    }
+    #alphabetsDiv h6{
+        /* background-color: aqua; */
+        font-size: 2vh;
+        font-weight: 100;
+    }
+    #alphabetsDiv h5{
+        /* background-color: aqua; */
+        font-size: 1.3vh;
+    }
+    #page2{
+        height: 100%;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5vw;
+    }
+    #page2part1{
+        height: 50%;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    #page2part2{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        /* background-color: red;     */
+    }
+    #page2part1 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    #page2part2 img{
+        height: 75%;
+        width: 100%;
+        object-fit: cover;
+        object-position: middle;
+    }
+    #page2part2 #text{
+        height: calc(100% - 75%);
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+    }
+    #page2part2 #text #text1{
+        height: 90%;
+        width: 40%;
+        /* background-color: yellow; */
+        font-size: 3vh;
+        font-weight: 500;
+        padding: 0.6vw 0 0 0;
+    }
+    #page2part2 #text #text2{
+        height: 90%;
+        width: 55%;
+        /* background-color: pink; */
+        font-size: 1.8vh;
+        font-weight: 100;
+        padding: 0.6vw 0 0 0;
+    }
 }
